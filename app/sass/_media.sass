@@ -1,0 +1,252 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.mainContent .pb1 p:nth-child(2) 
+		font-size: 5rem
+		letter-spacing: .2rem
+	
+	.mainContent .pb1 p:nth-child(3) 
+    	font-size: 2rem
+
+	.mainContent .pb2
+		width: 400px 
+    	height: 320px
+    	flex-direction: column
+	
+	.mainContent
+		flex-wrap: nowrap
+
+	.pb2 p:last-child
+		margin-left: 0
+
+	.feedbackForm
+		margin-top: 7%
+
+
+	.cloudPic 
+    	margin-top: 40px
+    	height: 280px
+
+	.feedbackForm .mouseIcon 
+    	margin-top: 15%
+
+	.pollDiscont p 
+    	font-size: 3.5rem
+
+	.pollBlock .container p:nth-child(1)
+		font-size: 4rem
+
+	.northernBeaches
+		justify-content: space-around
+
+	.backgroundPicture
+		height: 2250px
+		background-size: 100% 100%
+
+	.personalExcursion span 
+    	font-size: 4rem	
+
+		
+
+
+	.leafLeft
+		display: none
+
+	.leafRight
+		display: none
+
+
+	// .backgroundPicture
+	// 	background-size: 0%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.mainContent .pb1 p:nth-child(2) 
+		font-size: 4rem
+		line-height: 5rem
+    	letter-spacing: .1rem
+	
+	.feedbackForm 
+    	margin-top: 3%
+
+	.feedbackForm .mouseIcon 
+    	margin-top: 18%
+
+	.cloudPic 
+    	margin-top: 100px
+
+	.container
+		padding: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.logoBlock 
+    	display: flex
+    	justify-content: center
+
+	.contact
+		width: 100%
+		text-align:  center
+		flex-direction: column
+
+	.phone
+		width: 160px
+		padding: 0
+		align-self: center
+	.contactBtn
+		margin-right: 0
+		align-self: center
+	.logo
+		margin: 0
+
+	.header .semiopasity 
+	    background-size: 180%
+    	height: 2080px
+
+	.pollDiscont
+		margin-top: 1100px
+
+	.cloudPic
+		margin-top: 135px
+
+	.feedbackForm
+		position: absolute
+		margin-top: 870px
+
+	.mainContent 
+		display: flex
+		justify-content: center
+
+	.feedbackForm .mouseIcon 
+		display: none
+	
+	.proposalBlock
+		display: flex
+		justify-content: center
+		flex-direction: column
+		flex: 0
+		& .pb1,	.pb2
+			align-self: center
+	
+		& .pb1
+			text-align: center
+		
+		& .pb2
+			margin-left: 70px
+
+	.personalExcursion span
+		font-size: 3rem
+		width: 250px
+		text-align: center
+		margin-left: 100px
+
+	.personalExcursion button
+		align-self: center
+		margin-top: -200px
+		margin-left: 15%
+
+
+// div .pollDiscont 
+// 	& .leafLeft
+// 		height: 30%
+// 		width: 30%
+// 		margin: 310px 0px 0px -20px
+		
+
+// 	& .leafRight
+// 		height: 32%
+// 		width: 32%
+// 		margin: 180px -70px -140px 120px
+// 	& p 
+//     	font-size: 2.8rem
+
+// 	& button.startPoll
+// 		width: 150px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	// .cloudPic 
+    // 	margin-top: 120px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	.personalExcursionBlock
+		width: 100%
+		margin-left: -65px
+		& span
+			font-size:  2.5rem
+		& button
+			margin-top: -300px
+			width: 240px
+	
+	.allProposalsBtn
+		width: 240px
+
+	.northernBeaches h2, .northernBeaches p
+		font-size: 1.6rem
+
+	.northernBeaches button
+		margin-top: 10px
+		font-size: 1.5rem
+	
+
+	div .startPoll
+		width: 150px
+
+	.pollDiscont p
+		font-size: 2.8rem
+
+	.feedbackForm
+		width: 290px
+
+		& button
+			width: 212px
+		& .feedbackContent
+			font-size: 1.3rem
+
+.mainContent 
+	& .pb1 p:nth-child(1)
+		font-size: 1.6rem
+	& .pb1 p:nth-child(2)
+		font-size: 3rem
+	& .pb1 p:nth-child(3)
+		font-size: 1.7rem
+	& .pb2 span
+		font-size: 1.1rem
+	& .pb2 p img
+		margin-left:  25px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

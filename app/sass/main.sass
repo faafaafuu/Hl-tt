@@ -1,0 +1,450 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	width: 100%
+	height: 100%
+	max-width: 1920px
+	min-width: 320px
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.65
+	// font-family: $default-font
+	overflow-x: hidden
+	z-index: -5
+
+
+.header
+	width: 100%
+
+	& .bgImage
+		min-width: 1920px
+		background-image: url('../img/Layer0.png') 
+		background-repeat: no-repeat
+		background-size: 100%
+		position: absolute
+		height: 1080px
+		
+	& .semiopasity
+		background:  url(../img/Layer2.png) 
+		background-repeat: no-repeat
+		position: absolute
+		background-size: 110%
+		width: 1920px
+		height: 1080px
+		opacity: .8
+		z-index: 1
+
+		// -webkit-box-shadow: inset 0 1000px rgba(0,0,0,0.4)
+		// -moz-box-shadow:    inset 0 1000px rgba(0,0,0,0.4)
+		box-shadow: inset 0 1000px rgba(0,0,0,.5)
+
+.topHeader
+	display: flex	
+	flex-wrap: wrap
+	margin-top: 39px
+
+.logoBlock
+	flex: 1
+	z-index: 10
+
+.contact
+	display: flex
+	flex-wrap: wrap
+	z-index: 10
+
+
+.phone
+	padding-right: 20px
+	margin-top: 4%
+	font-size: 2rem
+	font-family: $pn_bw
+	color: rgb(255, 255, 255)
+
+
+
+.contactBtn 
+	font-family: $pn_r
+	color: #fff
+	margin-right: 25px
+	width: 240px
+	border-radius: 50px
+	height: 47px
+	margin-top: 2.2%
+	letter-spacing: .1rem
+	justify-content: center
+	background-color: rgba(255, 255, 255, 0.4)
+	border: none
+	font-size: 1.3rem
+		// & button:hover
+		// 	box-shadow: 0 0 11px rgba(33,33,33,.2)
+
+
+
+.logo
+	width: 170px
+	height: 59px
+	margin-top: .5%
+	margin-left: 3.5%
+
+.mainContent
+	color: #fff
+	margin-top: 7%
+	margin-left: 2%
+	display: flex
+	flex-wrap: wrap
+
+	& .proposalBlock
+		margin-top: -1.5%
+		flex-grow: 1
+		z-index: 10
+	
+	& .pb1 p:nth-child(1)
+		font-family: $pn_r
+		letter-spacing: .1rem
+		font-size: 2rem
+
+	& .pb1 p:nth-child(2)
+		font-family: $graffiti_1
+		font-size: 6rem
+		line-height: 7rem
+		letter-spacing: .3rem
+		margin-top: -2%
+		
+	& .pb1 p:nth-child(3)
+		font-family: $pn_r
+		margin-top: -40px
+		font-size: 3rem
+		line-height: 3.8rem
+
+	& .pb2
+		width: 720px
+		height: 160px
+		display: flex
+		flex-wrap: wrap
+	
+	& .pb2 p
+		margin-top: 0
+		display: flex
+
+
+	& .pb2 p img
+		width: 60px
+		margin-right:  14px
+		background-size: 100%
+		color: #3fa8a3
+	
+
+	& .pb2 span
+		margin-right: 30px
+		margin-top: 9px
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		font-size: 1.4rem
+		font-family: $pn_r
+
+.pb2 p:last-child
+	margin-left: 25px
+
+
+
+
+.feedbackForm
+	z-index: 5
+	border-width: 12px
+	border-color: rgba(255, 255, 255, 0.4)
+	border-style: solid
+	margin-top: -2%
+	margin-right: 1%
+	// opacity: 0.302
+	width: 376px
+	height: 520px
+
+	& p:nth-child(1)
+		margin-top: 8.5%
+		margin-bottom:  30px
+	
+	& .mouseIcon
+		width: 43px
+		margin-top: 10%
+		position: absolute
+		right: 48.4%
+		color: white
+
+
+.feedbackContent
+	padding-left: 27px
+
+form
+	display: flex
+	flex-direction: column
+		
+	& img
+		width: 20px
+		float: left
+
+	& input
+		font-family: $pn_r
+		border-width: 10px
+		margin: -30px 0 0 10px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+		top: 377px
+		width: 290px
+		height: 50px
+		text-transform: uppercase
+		width: 200px
+		margin-bottom: 20px
+	
+.submitExcursion
+	background-image: -moz-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+	background-image: -webkit-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+	background-image: -ms-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2)
+	width: 310px
+	height: 60px
+	border-radius: 50px
+	border: none
+	font-family: $pn_bw
+
+.accept
+	font-family: $pn_r
+	margin-top: 40px
+	
+	& a
+		text-decoration: underline
+		color: #fff
+
+.cloudPic
+
+	// border: 1px solid black
+	width: 1920px
+	position: absolute
+	background-size: 100%
+	background-image: url("../img/LayerCloud.png") 
+	margin-top: 100px
+	background-position: 100% -43%
+	height: 300px
+	z-index: 1
+
+.pollDiscont
+	width: 100%
+	height: 300px
+	display: flex
+	margin-top: 390px
+	flex-direction: column
+	justify-content: center
+	& .leafLeft
+			width: 462px
+			height: 419px
+			background-size: 100%
+			position: absolute
+			z-index: 1
+			margin: 0px 10px -120px -60px
+
+	& .leafRight
+		width: 435px
+		height: 405px
+		position: absolute
+		background-size: 100%
+		align-self: flex-end
+		z-index: 5001
+		margin: 50px -150px -120px 0px
+
+
+
+
+
+	//Градиент
+	// background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.88) 12%, rgba(255,255,255,0) 100%)
+	// background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.88) 12%,rgba(255,255,255,0) 100%)
+	// background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.88) 12%,rgba(255,255,255,0) 100%)
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 )
+	
+	& p 
+		text-align: center
+		font-size: 4.5rem
+		font-family: $graffiti_1
+	& button
+		background-image: -moz-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		background-image: -webkit-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		background-image: -ms-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2)
+		width: 280px
+		border: none
+		border-radius: 50px
+		height: 60px
+		color: #fff
+		align-self: center
+		font-family: $pn_bw
+
+
+.pollBlock
+	width: 100%
+	height: 100%
+
+.backgroundPicture
+		width: 1920px
+		z-index: 1
+		position: absolute
+		height: 1750px
+		background-image: url('../img/actual/Layer 3 copy 4.png') 
+		background-repeat: repeat-x
+		background-position: center
+		background-size: 80%
+
+.pollBlock .container
+	& p:nth-child(1)
+		margin-top: 180px
+		text-align: center
+		font-size: 4.5rem
+		font-family: $graffiti_1
+		justify-content: center
+		z-index: 300
+		position: relative
+		
+.northernBeaches
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between 
+
+	& div:nth-child(n+1)
+		width: 359px
+		z-index: 300
+		height: 500px
+		background: rgb(255, 255, 255)
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05)
+		margin-top: 30px
+
+
+
+	& h2, p
+		padding: 0 20px 0 29px
+
+.northernBeaches img
+	width: 100%
+	height: 200px
+
+
+.ellipse 
+	color: #fff
+	margin: 10px
+	padding: 26px 0 0 17px
+	border-radius: 50%
+	background: #45c7b9
+	position: absolute
+	width: 80px
+	height: 80px
+	z-index: 500
+	
+
+
+
+.northernBeaches button
+  border: 2px solid #8dc033
+  border-radius: 50px
+  position: relative
+  width: 196px
+  height: 36px
+  margin-left: 29px
+  margin-bottom: 32px
+  background: #fff
+  font-family: $pn_bw
+
+.apBtnBlock
+	width: 100%
+	display: flex
+	justify-content: center
+
+.allProposalsBtn
+	background-image: -moz-linear-gradient( -90deg, rgb(69,199,185) 0%, rgb(54,179,166) 100%)
+	background-image: -webkit-linear-gradient( -90deg, rgb(69,199,185) 0%, rgb(54,179,166) 100%)
+	background-image: -ms-linear-gradient( -90deg, rgb(69,199,185) 0%, rgb(54,179,166) 100%)
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2)
+	border: none
+	border-radius: 50px
+	font-family: $pn_bw
+	color: #fff
+	width: 350px
+	height: 60px
+	z-index: 449
+	margin-top: 50px
+
+  
+.personalExcursion
+	margin-top: 100px
+	background-size: 90%
+	height: 100%
+	z-index: -10
+	background: url('../img/Layer33.png') center
+
+	& .personalExcursionBlock
+		width: 668px
+		height: 424px
+		margin-top: 202px
+		display: flex
+		flex-wrap: wrap
+
+	&  span
+		font-size: 4.5rem
+		font-family: $graffiti_1
+		color: rgb(33, 33, 33)
+		text-align: left
+		text-transform: uppercase
+		line-height: 1.2
+		text-align: left
+		width: 607px
+		height: 153px
+
+	& button
+		background-image: -moz-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		background-image: -webkit-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		background-image: -ms-linear-gradient( -90deg, rgb(141,192,51) 0%, rgb(113,164,24) 100%)
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2)
+		border: none
+		color: #fff
+		border-radius: 50px
+		font-family: $pn_bw
+		width: 280px
+		height: 60px
+		margin-top: -90px
+		z-index: 33
+
+@import "media" // Всегда в конце
+
+	
