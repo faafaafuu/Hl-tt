@@ -1,4 +1,4 @@
 
 npm install - установка зависимостей
 
-gulp - развернуть проект на (http://localhost3000)
+gulp - развернуть проект (http://localhost:3000/)
